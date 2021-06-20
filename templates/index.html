@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html >
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spam Detector</title>
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {box-sizing: border-box;}
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header {
+    overflow: static;
+    background-color: #b30000;
+    padding: 40px 40px;
+  }
+
+  .header a {
+    float: left;
+    color: gray;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 25px;
+    border-radius: 5px;
+  }
+
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header a.active {
+    background-color: blue;
+    color: white;
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+      float: none;
+    }
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="header">
+    <div class="header-left">
+      <a class="active" href="#home">HOME</a>
+      <a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a>
+    </div>
+
+
+
+   <div class="header-right">
+     <a href="#" class="fa fa-facebook"></a>
+     <a href="#" class="fa fa-twitter"></a>
+     <a href="#" class="fa fa-google"></a>
+     <a href="#" class="fa fa-linkedin"></a>
+
+   </div>
+ </div>
+
+  <div style="padding-left:20px">
+
+  </div>
+
+
+  <!--for the social media icon -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    /* CSS code for button */
+    body {
+      background-image: url('static/images/dd.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* CSS code for button */
+    .button_css {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+
+    .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+
+
+
+
+
+
+
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+<style>
+
+h1 {
+background-color: ;
+color: gray;
+}
+h2 {
+background-color: ;
+color: black;
+}
+
+
+
+</style>
+<center>
+<h1><b>SPAM DETECTOR⚠️</b></h1>
+</center>
+
+
+
+
+
+<b>
+  <b>
+    <b>
+      <b>
+        <b>
+          <b>
+            <b>
+              <b><b>
+                <b>
+                  <b>
+                    <b>
+                      <b>
+                        <b>
+                          <b>
+                            <b>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+ <div class="login">
+
+   <center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+    <form action="{{ url_for('predict')}}" method="POST">
+    	<textarea  name="message" rows="20" " placeholder="please type your message here to detect" cols="50" required="required"></textarea>
+		<br> </br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">CHECK MESSAGE</button>
+
+        	<div class="results">
+
+ <b>
+   <b>
+     <b>
+       <b>
+         <b>
+
+
+
+	{% if prediction == 1%}
+	<h2 style="color:red;">this is a spam⚠️, be careful</h2>
+	{% elif prediction == 0%}
+				<h2 style="color:green;"><b>this is not spam (safe)</b></h2>
+	{% endif %}
+</center>
+	</div>
+
+    </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<style>
+#example1 {
+  background-image: url(static/images/bb.jpg), url(static/images/dd.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 50px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="example1">
+  <h1>spam message</h1>
+
+
+  <p>Spamming is the use of messaging systems to send multiple unsolicited messages (spam) to large numbers of recipients for the purpose of commercial advertising, for the purpose of non-commercial proselytizing, for any prohibited purpose (especially the fraudulent purpose of phishing), or simply sending the same message over and over to the same user. While the most widely recognized form of spam is email spam, the term is applied to similar abuses in other media: instant messaging spam,
+  </p> <p>Usenet newsgroup spam, Web search engine spam, spam in blogs, wiki spam, online classified ads spam, mobile phone messaging spam, Internet forum spam, junk fax transmissions, social spam, spam mobile apps,[1] television advertising and file sharing spam. It is named after Spam, a luncheon meat, by way of a Monty Python sketch about a restaurant that has Spam in almost every dish in which vikings annoyingly sing "Spam" repeatedly.[2]
+
+  </p>Spamming remains economically viable because advertisers have no operating costs beyond the management of their mailing lists, servers, infrastructures, IP ranges, and domain names, and it is difficult to hold senders accountable for their mass mailings. The costs, such as lost productivity and fraud, are borne by the public and by Internet service providers, which have added extra capacity to cope with the volume. Spamming has been the subject of legislation in many jurisdictions.[3]
+
+  A person who creates spam is called a spammer
+
+</div>
+</body>
+
+
+
+
+
+
+<style>
+img {
+  border-radius: 8px;
+}
+</style>
+<body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<h4>SOME EXAMPLES OF SPAM ....imeges....</h4>
+</center>
+
+<br>
+<br>
+<br>
+
+
+<img src="static/images/a (1).gif" alt="Paris" style="width:20%">
+<img src="static/images/a (1).jpeg" alt="Paris" style="width:20%">
+<img src="static/images/a (1).jpg" alt="Paris" style="width:20%">
+<img src="static/images/a (1).png" alt="Paris" style="width:20%">
+<img src="static/images/a (2).jpeg" alt="Paris" style="width:20%">
+<img src="static/images/a (2).jpg" alt="Paris" style="width:20%">
+<img src="static/images/a (3).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (1).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (1).png" alt="Paris" style="width:20%">
+<img src="static/images/bb (2).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (2).png" alt="Paris" style="width:20%">
+<img src="static/images/bb (3).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (3).png" alt="Paris" style="width:20%">
+<img src="static/images/bb (4).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (4).png" alt="Paris" style="width:20%">
+<img src="static/images/bb (5).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (5).png" alt="Paris" style="width:20%">
+<img src="static/images/bb (6).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (7).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (8).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (9).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (10).jpg" alt="Paris" style="width:20%">
+<img src="static/images/bb (11).jpg" alt="Paris" style="width:20%">
