@@ -2,4 +2,4 @@
 
 
  view app
-https://spam-detector-applicatio.herokuapp.com/
+https://spam-detectio.herokuapp.com/
